@@ -1,8 +1,13 @@
 import json
 import requests
 from past.builtins import raw_input
+import sys
 
-film_name = raw_input()
+if len(sys.argv) > 1:
+    film_name = str(sys.argv[1])
+else:
+    sys.exit("缺乏参数电影名称")
+
 movie_search_url = "https://api.douban.com/v2/movie/search?q=" + film_name
 content = requests.get(movie_search_url).text
 res = json.loads(content)['subjects'][0]
