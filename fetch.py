@@ -21,9 +21,4 @@ print("name:" + name + "/" +original_title)
 print("rate:" + str(rating))
 print("directors:" + '  '.join(str(director['name']) for director in directors))
 print("casts:" + '  '.join(str(cast['name']) for cast in casts))
-# print("country:" + country)
-# print("duration:" + movie_duration)
-# print("pubdate:" + pubdate)
-# print("country:" + movie_type[0] +"\\\\"+ movie_type[1] +"\\\\"+ movie_type[2])
-# print("--------------------------------------------------------By Douban")
-# 该片段来自于http://outofmemory.cn
+
